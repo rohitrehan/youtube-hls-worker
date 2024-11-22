@@ -1,0 +1,4 @@
+requests
+mypy
+ruff
+types-requests
