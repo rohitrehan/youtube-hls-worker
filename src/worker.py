@@ -13,7 +13,7 @@ def git_pull(repo_path: str):
     try:
         # Navigate to the repository path and run 'git pull'
         result = subprocess.run(
-            ["git", "-C", repo_path, "pull"],
+            ["git", "-C", repo_path, "pull", "--rebase"],
             text=True,  # Ensures result.stdout and result.stderr are strings
             capture_output=True,
             check=True,  # Raises a CalledProcessError for non-zero exit codes
