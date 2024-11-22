@@ -4,7 +4,7 @@
 rm -rf .venv
 
 # Create a virtual environment with Python 3.10
-python3.10 -m venv .venv
+python3.11 -m venv .venv
 
 # Check if the virtual environment creation was successful
 if [ $? -ne 0 ]; then
@@ -18,4 +18,5 @@ source .venv/bin/activate
 python --version
 
 # Install required packages from requirements.txt
+pip install pip-tools
 pip install -r requirements.txt

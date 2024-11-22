@@ -2,7 +2,7 @@
 
 # Define the paths
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
-CRON_JOB_SCRIPT="$SCRIPT_DIR/src/cron_job.py"
+CRON_JOB_SCRIPT="$SCRIPT_DIR/src/worker.py"
 CRON_JOB_ENTRY="@reboot python3 $CRON_JOB_SCRIPT"
 CRON_TEMP_FILE="/tmp/cron_temp"
 
